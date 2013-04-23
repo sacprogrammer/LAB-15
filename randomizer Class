@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class randomizer
+{
+  Scanner input = new Scanner( System.in );
+	
+	private int loBound;
+	private int hiBound;
+	
+	public int theNumber()
+	{
+
+		int compNumber;
+		compNumber = loBound + (int)((Math.random()*hiBound));
+		return compNumber;
+	}
+	
+	public int theNumber(int loBound, int hiBound)
+	{
+		int compNumber;
+		compNumber = loBound +(int)((Math.random()*hiBound));
+		return compNumber;
+	}
